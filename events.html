@@ -1,0 +1,2395 @@
+
+<!DOCTYPE html>
+<html>
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script src='cms-packages/jquery/1.8.3/jquery-min.js' type='text/javascript'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="compiled-assets/autocomplete-rails-5d8d93a5f6e19ab6e682b9dd9999592b61ff3c3d69ea242a830a8556158001fa.js"></script>
+<script src="javascripts/frontend/site.js"></script>
+<link rel="stylesheet" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script src='cms-packages/jquery-match-height/0.6.0/jquery-match-height.js' type='text/javascript'></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="aM0SSbyCd97gMibxDO2+j4BEhSU+EcfdEP4dz2n9qjB6wjJrF9yvf0WRv9urY7eBpwycZYOqT0vH5ET8gNjCUg==" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href='generated-stylesheets/565-070620200007.css' rel='stylesheet'>
+<link href='generated-stylesheets/override.css' rel='stylesheet'>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+<meta content='width=device-width,initial-scale=1.0' name='viewport'>
+
+
+<title>Banbury Sailing Club : Events</title>
+</head>
+<body class='action-events '>
+<div id='topper'>
+<div class='inner'>
+<form action="https://banburysailing.org.uk/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<span id='top-social'>
+<a target="_blank" href="https://www.facebook.com/BanburySailingClub"><img width="18" height="18" src="/images/site/top-facebook2x.png" alt="Top facebook2x" /></a>
+
+
+
+
+
+
+
+</span>
+<span id='top-phone'>
+<span class='not-mobile'><img width="18" height="18" src="images/site/top-phone2x.png" alt="Top phone2x" /></span>
+<span class='not-mobile'>01327 260960</span>
+</span>
+<span id='top-email'>
+<a href='mailto:info@banburysailing.org.uk'><img width="24" height="18" src="images/site/top-email2x.png" alt="Top email2x" /></a>
+<span class='not-mobile'><a href="mailto:info@banburysailing.org.uk">Email us</a></span>
+</span>
+<span id='top-search'>
+<a href='#' onclick='toggle_search()'><img width="12" height="18" src="images/site/top-search2x.png" alt="Top search2x" /></a>
+<input type="text" name="q" id="q" placeholder="search..." style="display:none" />
+</span>
+<span id='top-right'>
+  <a href="http://www.banburysailing.org.uk:443/my-cart">Basket</a>
+  <a href="http://www.banburysailing.org.uk:443/login">Login</a>
+
+</span>
+</form>
+
+</div>
+</div>
+<div id='header'>
+<div class='inner'>
+<a href="/"><img id="primary-logo" src="images/site/BSC-full-logo-left-2020-110px2.png" alt="BSC full logo" /></a>
+<img id="secondary-logo" src="images/site/BSC-70-years-110px.png" alt="70yr logo" />
+
+</div>
+</div>
+<div id='grouping'>
+<div id='navigation'>
+<div class='inner'><ul class='menu with-burger'>
+<li class='burger'><a href="#" onclick="toggle_burger(); return false;">&#9776; Menu</a></li>
+<li class='non-burger depth0    '>
+<a href="index.html">Home</a>
+</li>
+<li class='non-burger depth0    ' data-index='0'>
+<a href="page/history.html">Club</a>
+</li>
+<li class='non-burger depth0    ' data-index='1'>
+<a href="page/overview.html">Sailing</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="news.html">News</a>
+</li>
+<li class='non-burger depth0 on   '>
+<a href="events.html">Calendar</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="galleries.html">Galleries</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="links.html">Links</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="results.html">Results</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="booking.html">Book online</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="forums.html">Forums</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="contact.html">Contacts</a>
+</li>
+</ul>
+</div>
+</div>
+<script>
+  function toggle_burger() {
+  	$('.non-burger').toggleClass( 'show' );
+  }
+</script>
+<style>
+  .count {
+  	float:right;
+  	display:inline-block;
+  	background:#888;
+  	color:white;
+  	font-size:10px;
+  	padding:0 3px;
+  	border-radius:2px;
+  	position:relative;
+  	top:2px;
+  }
+</style>
+</div>
+<script>
+  $(function(){
+  	var preHeight = $('.trail.pre').outerHeight( true );
+  	var postHeight = $('.trail.pre').outerHeight( true );
+  	var maxHeight = 0
+  	if (preHeight && preHeight > maxHeight)
+  		maxHeight = preHeight;
+  	if (postHeight && postHeight > maxHeight)
+  		maxHeight = postHeight;
+  	if (maxHeight>0) {
+  		$('#secondary').css('margin-top',maxHeight+'px');
+  	}
+  })
+</script>
+<div class='  with-trail' id='page'>
+<div class='inner'>
+<style>
+  #problems a { color:white; font-weight:bold; }
+</style>
+
+<div class='trail pre'><a href="/">Home</a> <span class="sep">/</span> Events</div>
+<div id='primary'>
+
+<div class='trail post'><a href="/">Home</a> <span class="sep">/</span> Events</div>
+<form id="eventsForm" action="/events" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<select name="year" id="year"><option value="">Year...</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+<option value="2015">2015</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option></select>
+<select name="month" id="month"><option value="">Month...</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option></select>
+<select name="day" id="day"><option value="">Day...</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option></select>
+<div class='subscribe'>
+<a href="webcal://www.banburysailing.org.uk/feed/60208025">Click here to subscribe to this calendar</a>
+</div>
+</form>
+
+<style>
+  .subscribe { color:#888; float:right; }
+  .subscribe a { background:rgba(0,0,0,0.5); color:white; display:inline-block; padding:0.25em 0.5em; border-radius:0.25em; text-decoration:none; }
+  .subscribe a:hover { background:rgba(0,0,0,0.75); text-decoration:underline; }
+  @media screen and (max-width:800px) { .subscribe { float:none; margin-top:1em; } }
+</style>
+<script>
+  function refresh_events_page() {
+  	var year = $('#year').val();
+  	var month = $('#month').val();
+  	var day = $('#day').val();
+  	var path = '/events'
+  	if (year) {
+  		path += '/'+year;
+  		if (month) {
+  			path += '/'+month;
+  			if (day)
+  				path += '/'+day;
+  		}
+  	}
+  	window.location.href = path;
+  }
+  $(function(){
+  	$('#year,#month,#day').change(refresh_events_page);
+  })
+</script>
+<ul class='tags'>
+<li>Types&nbsp;&nbsp;&nbsp;</li>
+<li class='on'><a href="/events">Any</a></li>
+<li><a href="/events?type=3067">Coached Racing</a></li>
+<li><a href="/events?type=3075">Coached Sailing</a></li>
+<li><a href="/events?type=3065">Open Day</a></li>
+<li><a href="/events?type=2032">Youth</a></li>
+<li><a href="/events?type=2034">Free Sailing</a></li>
+<li><a href="/events?type=1543">BSC Event</a></li>
+<li><a href="/events?type=1541">Open Meeting</a></li>
+<li><a href="/events?type=92">Training</a></li>
+<li><a href="/events?type=286">Cruising</a></li>
+<li><a href="/events?type=310">Racing</a></li>
+<li><a href="/events?type=88">Social Event</a></li>
+<li><a href="/events?type=284">BSC Club (away) Event </a></li>
+</ul>
+<style>
+  .type-badge { font-size:10px; background:#ddd; color:#555; padding:1px 4px; border-radius:2px; text-transform:lowercase; }
+</style>
+<table class='agenda'>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='heading jun'>
+<th colspan='6'>
+<h2><a href="/events/2020/6">June 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Mon<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>1st</span>
+<span style='opacity:0.5;'>&rarr;</span>
+30th
+</td>
+<td></td>
+<td>
+<a href="/event/no-club-arranged-activity-is-possible-in-june">June Activity Cancelled</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>BSC Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>19th</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-2">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>26th</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-3">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>28th</span>
+</td>
+<td>18:30&nbsp;-&nbsp;21:00</td>
+<td>
+<a href="lark-eopen-meeting.html">Lark eOpen Meeting</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='heading jul'>
+<th colspan='6'>
+<h2><a href="/events/2020/7">July 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>1st</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-evening-coached-series-4">Wednesday evening coached series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>3rd</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>3rd</span>
+</td>
+<td>18:00</td>
+<td>
+<a href="/event/friday-coaching-9">Friday Coaching</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>3rd</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-4">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>3rd</span>
+</td>
+<td>21:00</td>
+<td>
+<a href="/event/friday-bbq-3">Friday BBQ</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+11th
+</td>
+<td>09:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/youth-training-2020">Provisional - Youth Training 2020</a>
+&raquo;
+<a href="/event/youth-training-8">Youth Training 8</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Youth</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/youth-training-2020">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+11th
+</td>
+<td>13:00</td>
+<td>
+<a href="/event/saturday-series">Provisional Saturday Series</a>
+&raquo;
+<a href="/event/saturday-afternoon-coached-8">Saturday afternoon coached</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>5th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>10th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-1">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>10th</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-5">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>11th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/pb-open">P&amp;B Northamptonshire Youth Series - Open Meeting</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Open Meeting</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>12th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series-1">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>15th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-evening-coached-series-5">Wednesday evening coached series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>17th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-2">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>17th</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-6">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>18th</span>
+</td>
+<td>13:00</td>
+<td>
+<a href="/event/saturday-series">Provisional Saturday Series</a>
+&raquo;
+<a href="/event/saturday-afternoon-coached-9">Saturday afternoon coached</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>18th</span>
+</td>
+<td>13:00&nbsp;-&nbsp;18:00</td>
+<td>
+<a href="/event/fun-day">Fun Day</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Youth</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>19th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series-2">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>24th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-3">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>24th</span>
+</td>
+<td>18:00</td>
+<td>
+<a href="/event/friday-coaching-10">Friday Coaching</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>24th</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-7">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>24th</span>
+</td>
+<td>21:00</td>
+<td>
+<a href="/event/friday-bbq-4">Friday BBQ</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>26th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+31st
+</td>
+<td></td>
+<td>
+<a href="/event/nssa-regatta-plymouth">NSSA Regatta - Plymouth</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>BSC Club (away) Event </span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>26th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-pursuit-series">2020 Pursuit Series</a>
+&raquo;
+<a href="/event/sunday-racing-pursuit-series-1">Sunday Racing - Pursuit Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>29th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-evening-coached-series-6">Wednesday evening coached series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>31st</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-4">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>31st</span>
+</td>
+<td>19:00&nbsp;-&nbsp;20:00</td>
+<td>
+<a href="/event/esailing">eSailing</a>
+&raquo;
+<a href="/event/esailing-summer-series-8">Virtual Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='aug heading'>
+<th colspan='6'>
+<h2><a href="/events/2020/8">August 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>2nd</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series-3">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>5th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-night-sailing">Wednesday Night Sailing</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>7th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-5">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>9th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series-4">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>12th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-evening-coached-series-7">Wednesday evening coached series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Thu<span class="not-mobile">rsday</span></span>
+</td>
+<td>
+<span class='day-num'>13th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+15th
+</td>
+<td>18:00</td>
+<td>
+<a href="/event/summer-camp-arrive-6pm">Summer Camp - Arrive 6pm</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Youth</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>14th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-6">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>14th</span>
+</td>
+<td>18:00</td>
+<td>
+<a href="/event/friday-coaching-11">Friday Coaching</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>14th</span>
+</td>
+<td>21:00</td>
+<td>
+<a href="/event/friday-bbq-5">Friday BBQ</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>16th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series-5">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>21st</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-7">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>23rd</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-pursuit-series">2020 Pursuit Series</a>
+&raquo;
+<a href="/event/sunday-racing-pursuit-series-2">Sunday Racing - Pursuit Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>26th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-evening-coached-series-8">Wednesday evening coached series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>28th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+31st
+</td>
+<td></td>
+<td>
+<a href="/event/away-weekend-location-tbc">Away Weekend - Weymouth and Portland National Sailing Academy</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>BSC Club (away) Event </span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/away-weekend-location-tbc">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>28th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-8">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>30th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-summer-series">2020 Summer Series</a>
+&raquo;
+<a href="/event/sunday-racing-summer-series-6">Sunday Racing - Summer Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='heading sep'>
+<th colspan='6'>
+<h2><a href="/events/2020/9">September 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>2nd</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-night-sailing-1">Wednesday Night Sailing</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-9">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+</td>
+<td>18:00</td>
+<td>
+<a href="/event/friday-coaching-12">Friday Coaching</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+</td>
+<td>21:00</td>
+<td>
+<a href="/event/friday-bbq-6">Friday BBQ</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>5th</span>
+</td>
+<td>09:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/youth-training-2020">Provisional - Youth Training 2020</a>
+&raquo;
+<a href="/event/youth-training-9">Youth Training 9</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Youth</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/youth-training-2020">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>5th</span>
+</td>
+<td>14:00</td>
+<td>
+<a href="/event/open-day-2020">Open Day</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Open Day</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>6th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series">Merlin Rocket Open_Sunday Racing - Autumn Series </a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>6th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;16:00</td>
+<td>
+<a href="/event/merlin-rocket-midland-series-open-meeting">Merlin Rocket (Midland Series) open meeting</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Open Meeting</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>9th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-night-sailing-2">Wednesday Night Sailing</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>11th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-10">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>12th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/start-sailing-3">RYA Levels 1 &amp; 2 - Start Sailing 3</a>
+&raquo;
+<a href="/event/rya-level-1-or-2-day1-1">RYA Level 1 or 2 - day 1</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/start-sailing-3">book</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>13th</span>
+</td>
+<td>09:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/youth-training-2020">Provisional - Youth Training 2020</a>
+&raquo;
+<a href="/event/youth-training-10">Youth Training 10</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Youth</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/youth-training-2020">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>13th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series-inc-barts-bash">Sunday Racing - Autumn Series inc Rookie Racing &amp; Youth Training 10</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>13th</span>
+</td>
+<td>13:00</td>
+<td>
+<a href="/event/barts-bash">Barts Bash</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>16th</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-night-sailing-3">Wednesday Night Sailing</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>18th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-11">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>19th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+20th
+</td>
+<td></td>
+<td>
+<a href="/event/southport-24hr-race">Southport 24hr race</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>BSC Club (away) Event </span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>20th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series-1">Sunday Racing - Autumn Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Wed<span class="not-mobile">nesday</span></span>
+</td>
+<td>
+<span class='day-num'>23rd</span>
+</td>
+<td>16:30</td>
+<td>
+<a href="/event/wednesday-sailing">Provisional - Wednesday Sailing</a>
+&raquo;
+<a href="/event/wednesday-night-sailing-4">Wednesday Night Sailing</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>25th</span>
+<span style='opacity:0.5;'>&rarr;</span>
+27th
+</td>
+<td></td>
+<td>
+<a href="/event/offshore-weekend">Offshore Sailing Weekend</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>BSC Club (away) Event </span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/offshore-weekend">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>25th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-12">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>26th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/start-sailing-3">RYA Levels 1 &amp; 2 - Start Sailing 3</a>
+&raquo;
+<a href="/event/rya-level-1-or-2-day2-1">RYA Level 1 or 2 - day 2</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/start-sailing-3">book</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>27th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/regatta-day-inc-sunday-racing-autumn-series">Regatta Day inc Sunday Racing - Autumn Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='heading oct'>
+<th colspan='6'>
+<h2><a href="/events/2020/10">October 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>2nd</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-13">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>3rd</span>
+</td>
+<td>09:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/youth-training-2020">Provisional - Youth Training 2020</a>
+&raquo;
+<a href="/event/youth-training-11">Youth Training 11</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Youth</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/youth-training-2020">book</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series-2">Sunday Racing - Autumn Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>9th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-14">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>11th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series-3">Sunday Racing - Autumn Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>16th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-15">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>17th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/first-aid-4">First Aid</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/first-aid-4">book</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>18th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series-4">Sunday Racing - Autumn Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>23rd</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-16">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>24th</span>
+</td>
+<td>09:30</td>
+<td>
+<a href="/event/work-parties">Work Parties</a>
+&raquo;
+<a href="/event/post-season-work-party">Post season Work party</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>BSC Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>25th</span>
+</td>
+<td>10:00</td>
+<td>
+<a href="/event/2020-autumn-series">2020 Autumn Series</a>
+&raquo;
+<a href="/event/sunday-racing-autumn-series-5">Sunday Racing - Autumn Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>30th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-17">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='heading nov'>
+<th colspan='6'>
+<h2><a href="/events/2020/11">November 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>1st</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>6th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-18">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>7th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/powerboat-course-2">Powerboat Course - 2</a>
+&raquo;
+<a href="/event/safety-boat-powerboat-l2-day-1-1">Powerboat L2 - day 1</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/powerboat-course-2">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>7th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/safety-boat-2">Safety Boat - 2</a>
+&raquo;
+<a href="/event/safety-boat-powerboat-l2-day-1-1-1">Safety Boat - day 1</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/safety-boat-2">book</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>8th</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-8">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>13th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-19">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>14th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/powerboat-course-2">Powerboat Course - 2</a>
+&raquo;
+<a href="/event/safety-boat-powerboat-l2-day-2-1">Powerboat L2 - day 2</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/powerboat-course-2">book</a></span>
+</td>
+</tr>
+<tr class='same'>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>14th</span>
+</td>
+<td>09:00</td>
+<td>
+<a href="/event/safety-boat-2">Safety Boat - 2</a>
+&raquo;
+<a href="/event/safety-boat-powerboat-l2-day-2-1-1">Safety Boat - day 2</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Training</span>
+</td>
+<td class='not-mobile'>
+<span style='float:right;'><a href="/event/safety-boat-2">book</a></span>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>15th</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-9">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>20th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-20">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sat<span class="not-mobile">urday</span></span>
+</td>
+<td>
+<span class='day-num'>21st</span>
+</td>
+<td>23:00</td>
+<td>
+<a href="/event/laying-up-supper">Laying Up Supper</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Social Event</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>22nd</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-10">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>27th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-21">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>29th</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-11">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td colspan='6' style='background-color:transparent;'>&nbsp;</td>
+</tr>
+<tr class='dec heading'>
+<th colspan='6'>
+<h2><a href="/events/2020/12">December 2020</a></h2>
+</th>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>4th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-22">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>6th</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-12">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>11th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-23">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>13th</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-13">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Fri<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>18th</span>
+</td>
+<td>10:00&nbsp;-&nbsp;14:00</td>
+<td>
+<a href="/event/ladies-sailing">Provisional - Ladies Sailing</a>
+&raquo;
+<a href="/event/ladies-friday-1-24">Ladies Friday</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Coached Sailing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>20th</span>
+</td>
+<td>10:30</td>
+<td>
+<a href="/event/2020-winter-series">2020 Winter Series</a>
+&raquo;
+<a href="/event/sunday-racing-winter-series-14">Sunday Racing - Winter Series</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+<tr>
+<td>
+<span class='day-name'>Sun<span class="not-mobile">day</span></span>
+</td>
+<td>
+<span class='day-num'>27th</span>
+</td>
+<td>11:30</td>
+<td>
+<a href="/event/christmas-race-4">Christmas Race</a>
+</td>
+<td class='not-mobile'>
+<span class='type-badge'>Racing</span>
+</td>
+<td class='not-mobile'>
+</td>
+</tr>
+</table>
+
+<style>
+  #base-paging { text-align:left; }
+  #base-paging a:first-child, #base-paging span:first-child { }
+  #base-paging a:last-child, #base-paging span:last-child { float:right; }
+</style>
+<div id='base-paging'>
+</div>
+</div>
+<div style='clear:both;'></div>
+</div>
+</div>
+
+<div id='footer-logos'>
+<div class='inner'>
+<div class='row'>
+<a target="_blank" href="http://rya.org.uk/"><img src="images/site/RYA-logo-group-100px.png" alt="RYA-logo-group-100px" /></a>
+<img src="images/site/BSC-funders-100px.png" alt="BSC-funders-100px" />
+</div>
+</div>
+</div>
+
+<div id='footer'>
+<div class='inner'>
+<table>
+<tr>
+<td class='cols4'>
+<h2>Site</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="/">Home</a>
+</li>
+<li class=' depth0    ' data-index='2'>
+<a href="/page/history">Club</a>
+</li>
+<li class=' depth0    ' data-index='2'>
+<a href="/page/overview">Sailing</a>
+</li>
+<li class=' depth0    '>
+<a href="/news">News</a>
+</li>
+<li class=' depth0 on   '>
+<a href="/events">Calendar</a>
+</li>
+<li class=' depth0    '>
+<a href="/galleries">Galleries</a>
+</li>
+<li class=' depth0    '>
+<a href="/links">Links</a>
+</li>
+<li class=' depth0    '>
+<a href="/results">Results</a>
+</li>
+<li class=' depth0    '>
+<a href="/booking">Book online</a>
+</li>
+<li class=' depth0    '>
+<a href="/contact">Contacts</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Club</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="/club/history">About Banbury Sailing Club</a>
+</li>
+<li class=' depth0    '>
+<a href="/club/benefits-of-membership">Benefits of Membership</a>
+</li>
+<li class=' depth0    '>
+<a href="/club/club-boats">Club Boats</a>
+</li>
+<li class=' depth0    '>
+<a href="/club/join-us">Join Us!</a>
+</li>
+<li class=' depth0    '>
+<a href="/club/social-events">Social Events</a>
+</li>
+<li class=' depth0    '>
+<a href="/club/committee">The General Committee</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Sailing</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="/sailing/overview">Sailing Overview</a>
+</li>
+<li class=' depth0    '>
+<a href="/sailing/e-sailing-at-banbury-sc">eSailing at Banbury SC</a>
+</li>
+<li class=' depth0    '>
+<a href="/sailing/overview-1">Training Overview</a>
+</li>
+<li class=' depth0    '>
+<a href="/sailing/cruising-at-banbury-sc">Cruising At Banbury SC</a>
+</li>
+<li class=' depth0    '>
+<a href="/sailing/racing-at-bsc-1">Racing at BSC</a>
+</li>
+<li class=' depth0    '>
+<a href="/sailing/sunday-duties-roles-responsibilities-and-volunteering">SUNDAY DUTIES - Roles, Responsibilities and Volunteering</a>
+</li>
+<li class=' depth0    '>
+<a href="/sailing/our-youth-section">Our Youth Section</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Contact details</h2>
+<p>Boddington Reservoir<br />Byfield<br />Northants<br />NN11 6XU</p>
+<p>
+Phone : 01327 260960
+<br>
+Email : <a href="mailto:info@banburysailing.org.uk">info@banburysailing.org.uk</a>
+</p>
+<p><a href="/contact#map">View on map</a></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id='base'>
+<div class='inner'>
+<span id='base-credit'>&copy; 2020 Banbury Sailing Club</span>
+<span id='base-right'>powered by <a target="_blank" href="http://www.sailingclubmanager.com">Sailing Club Manager</a></span>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-8170523-13', 'www.banburysailing.org.uk');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

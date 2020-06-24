@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from banburysailing.org.uk/galleries by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 10 Jun 2020 14:54:40 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script src='cms-packages/jquery/1.8.3/jquery-min.js' type='text/javascript'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="compiled-assets/autocomplete-rails-5d8d93a5f6e19ab6e682b9dd9999592b61ff3c3d69ea242a830a8556158001fa.js"></script>
+<script src="javascripts/frontend/site.js"></script>
+<link rel="stylesheet" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script src='cms-packages/jquery-match-height/0.6.0/jquery-match-height.js' type='text/javascript'></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="KWK/QgI/+rONoHFgNU8wdcS2wMDKZm+cg8C2oRg47+obXn5dlVY6tyv2IXaydKQoL22wzRBKeyNVbZuvkO6lIA==" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href='generated-stylesheets/565-070620200007.css' rel='stylesheet'>
+<link href='generated-stylesheets/override.css' rel='stylesheet'>
+<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+<meta content='width=device-width,initial-scale=1.0' name='viewport'>
+
+
+<title>Banbury Sailing Club : Gallery</title>
+</head>
+<body class='action-galleries '>
+<div id='topper'>
+<div class='inner'>
+<form action="https://banburysailing.org.uk/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<span id='top-social'>
+<a target="_blank" href="https://www.facebook.com/BanburySailingClub"><img width="18" height="18" src="images/site/top-facebook2x.png" alt="Top facebook2x" /></a>
+
+
+
+
+
+
+
+</span>
+<span id='top-phone'>
+<span class='not-mobile'><img width="18" height="18" src="images/site/top-phone2x.png" alt="Top phone2x" /></span>
+<span class='not-mobile'>01327 260960</span>
+</span>
+<span id='top-email'>
+<a href='mailto:info@banburysailing.org.uk'><img width="24" height="18" src="images/site/top-email2x.png" alt="Top email2x" /></a>
+<span class='not-mobile'><a href="mailto:info@banburysailing.org.uk">Email us</a></span>
+</span>
+<span id='top-search'>
+<a href='#' onclick='toggle_search()'><img width="12" height="18" src="images/site/top-search2x.png" alt="Top search2x" /></a>
+<input type="text" name="q" id="q" placeholder="search..." style="display:none" />
+</span>
+<span id='top-right'>
+<a href="http://www.banburysailing.org.uk:443/my-cart">Basket</a>
+<a href="http://www.banburysailing.org.uk:443/login">Login</a>
+
+</span>
+</form>
+
+</div>
+</div>
+<div id='header'>
+<div class='inner'>
+  <a href="index.html"><img id="primary-logo" src="images/site/BSC-full-logo-left-2020-110px2.png" alt="BSC full logo" /></a>
+  <img id="secondary-logo" src="images/site/BSC-70-years-110px.png" alt="70yr logo" />
+
+</div>
+</div>
+<div id='grouping'>
+<div id='navigation'>
+<div class='inner'><ul class='menu with-burger'>
+<li class='burger'><a href="#" onclick="toggle_burger(); return false;">&#9776; Menu</a></li>
+<li class='non-burger depth0    '>
+<a href="index.html">Home</a>
+</li>
+<li class='non-burger depth0    ' data-index='0'>
+<a href="page/history.html">Club</a>
+</li>
+<li class='non-burger depth0    ' data-index='1'>
+<a href="page/overview.html">Sailing</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="news.html">News</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="http://www.banburysailing.org.uk:443/events">Calendar</a>
+</li>
+<li class='non-burger depth0 on   '>
+<a href="galleries.html">Galleries</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="links.html">Links</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="results.html">Results</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="http://www.banburysailing.org.uk:443/booking">Book online</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="http://www.banburysailing.org.uk:443/forums">Forums</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="http://www.banburysailing.org.uk:443/contact">Contacts</a>
+</li>
+</ul>
+</div>
+</div>
+<script>
+  function toggle_burger() {
+  	$('.non-burger').toggleClass( 'show' );
+  }
+</script>
+<style>
+  .count {
+  	float:right;
+  	display:inline-block;
+  	background:#888;
+  	color:white;
+  	font-size:10px;
+  	padding:0 3px;
+  	border-radius:2px;
+  	position:relative;
+  	top:2px;
+  }
+</style>
+</div>
+<script>
+  $(function(){
+  	var preHeight = $('.trail.pre').outerHeight( true );
+  	var postHeight = $('.trail.pre').outerHeight( true );
+  	var maxHeight = 0
+  	if (preHeight && preHeight > maxHeight)
+  		maxHeight = preHeight;
+  	if (postHeight && postHeight > maxHeight)
+  		maxHeight = postHeight;
+  	if (maxHeight>0) {
+  		$('#secondary').css('margin-top',maxHeight+'px');
+  	}
+  })
+</script>
+<div class='  with-trail' id='page'>
+<div class='inner'>
+<style>
+  #problems a { color:white; font-weight:bold; }
+</style>
+
+<div class='trail pre'><a href="index.html">Home</a> <span class="sep">/</span> Gallery</div>
+<div id='primary'>
+
+<div class='trail post'><a href="index.html">Home</a> <span class="sep">/</span> Gallery</div>
+<h1 class='portal'>Gallery</h1>
+<style>
+  ul#galleries {}
+  xxx0ul#galleries h2 { font-size:18px; }
+  ul#galleries .image { position:relative; display:inline-block; width:20%; float:left; padding:10px; box-sizing:border-box; }
+  ul#galleries img { border:2px solid transparent; width:100%; }
+  ul#galleries img:hover { border:2px solid #222; }
+  ul#galleries img {
+  -webkit-transition : border 100ms ease-out;
+  -moz-transition : border 100ms ease-out;
+  -o-transition : border 100ms ease-out;
+  transition : border 100ms ease-out;
+  }
+</style>
+<ul id='galleries'>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/86402">BSC Merlin Open 30th June 2019</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/86402"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/653718_180x180f.jpg" alt="653718 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/86402"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/653716_180x180f.jpg" alt="653716 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/86402"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/653712_180x180f.jpg" alt="653712 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/86402"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/653710_180x180f.jpg" alt="653710 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/86402"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/653708_180x180f.jpg" alt="653708 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>21 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/85834">Lark Open Mtg 160619</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/85834"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/648554_180x180f.jpg" alt="648554 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/85834"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/648552_180x180f.jpg" alt="648552 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/85834"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/648550_180x180f.jpg" alt="648550 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/85834"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/648548_180x180f.jpg" alt="648548 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/85834"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/648546_180x180f.jpg" alt="648546 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>18 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/78884">The last day of the Winter Series 16th December 2018</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/78884"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/609856_180x180f.jpg" alt="609856 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/78884"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/609854_180x180f.jpg" alt="609854 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/78884"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/609852_180x180f.jpg" alt="609852 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/78884"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/609850_180x180f.jpg" alt="609850 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/78884"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/609846_180x180f.jpg" alt="609846 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>40 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/63765">Autumn Regatta (Inc Barts Bash)</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/63765"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/519019_180x180f.jpg" alt="519019 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/63765"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/519011_180x180f.jpg" alt="519011 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/63765"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/519003_180x180f.jpg" alt="519003 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/63765"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/519023_180x180f.jpg" alt="519023 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/63765"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/519017_180x180f.jpg" alt="519017 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>6 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/59757">Merlin Rocket Open 23rd April 2017</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/498561_180x180f.jpg" alt="498561 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/498559_180x180f.jpg" alt="498559 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/498555_180x180f.jpg" alt="498555 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/498553_180x180f.jpg" alt="498553 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/498549_180x180f.jpg" alt="498549 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>48 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/59893">Optimist Open 30th April</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/499325_180x180f.jpg" alt="499325 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/499329_180x180f.jpg" alt="499329 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/499321_180x180f.jpg" alt="499321 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/499323_180x180f.jpg" alt="499323 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/59893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/499317_180x180f.jpg" alt="499317 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>2 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/54939">Laser Vago Open Meeting 1st and 2nd October 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/54939"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/468769_180x180f.jpg" alt="468769 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/54939"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/468767_180x180f.jpg" alt="468767 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/54939"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/468765_180x180f.jpg" alt="468765 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/54939"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/468763_180x180f.jpg" alt="468763 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/54939"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/468761_180x180f.jpg" alt="468761 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>17 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/53435">Barts Bash 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/53435"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/466919_180x180f.jpg" alt="466919 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/53435"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/466889_180x180f.jpg" alt="466889 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/53435"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/466881_180x180f.jpg" alt="466881 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/53435"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/466879_180x180f.jpg" alt="466879 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/53435"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/466877_180x180f.jpg" alt="466877 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>2 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/52787">TollBar Volvo Summer Regatta 14th Aug 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/52787"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/463847_180x180f.jpg" alt="463847 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/52787"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/463773_180x180f.jpg" alt="463773 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/52787"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/463771_180x180f.jpg" alt="463771 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/52787"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/463769_180x180f.jpg" alt="463769 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/52787"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/463767_180x180f.jpg" alt="463767 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>19 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/49757">Optimist Open Meeting 23rd April 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/452503_180x180f.jpg" alt="452503 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/452501_180x180f.jpg" alt="452501 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/452499_180x180f.jpg" alt="452499 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/452497_180x180f.jpg" alt="452497 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49757"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/452495_180x180f.jpg" alt="452495 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>28 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/49325">Merlin Rocket Open Meeting 10th April 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49325"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/451181_180x180f.jpg" alt="451181 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49325"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/451179_180x180f.jpg" alt="451179 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49325"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/451177_180x180f.jpg" alt="451177 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49325"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/451175_180x180f.jpg" alt="451175 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49325"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/451173_180x180f.jpg" alt="451173 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>48 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/49155">Laser Open Meeting 2nd April 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49155"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450381_180x180f.jpg" alt="450381 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49155"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450379_180x180f.jpg" alt="450379 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49155"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450377_180x180f.jpg" alt="450377 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49155"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450375_180x180f.jpg" alt="450375 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49155"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450373_180x180f.jpg" alt="450373 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>6 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/49011">Solo Open 2nd April 2016</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49011"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450217_180x180f.jpg" alt="450217 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49011"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450215_180x180f.jpg" alt="450215 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49011"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450213_180x180f.jpg" alt="450213 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49011"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450211_180x180f.jpg" alt="450211 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/49011"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/450209_180x180f.jpg" alt="450209 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>18 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/48449">Instructor Refresher Day 19th March</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48449"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/448533_180x180f.jpg" alt="448533 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48449"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/448531_180x180f.jpg" alt="448531 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48449"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/448529_180x180f.jpg" alt="448529 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48449"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/448513_180x180f.jpg" alt="448513 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48449"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/448511_180x180f.jpg" alt="448511 180x180f" /></a>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/48635">Easter Sunday 2016 Racing</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48635"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/449237_180x180f.jpg" alt="449237 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48635"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/449235_180x180f.jpg" alt="449235 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48635"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/449233_180x180f.jpg" alt="449233 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48635"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/449231_180x180f.jpg" alt="449231 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/48635"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/449229_180x180f.jpg" alt="449229 180x180f" /></a>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/47893">Feb Work party</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/47893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/447477_180x180f.jpg" alt="447477 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/47893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/447475_180x180f.jpg" alt="447475 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/47893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/447473_180x180f.jpg" alt="447473 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/47893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/447471_180x180f.jpg" alt="447471 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/47893"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/447469_180x180f.jpg" alt="447469 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>7 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/44784">Banbury MOT</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/44784"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/433606_180x180f.jpg" alt="433606 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/44784"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/433602_180x180f.jpg" alt="433602 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/44784"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/433600_180x180f.jpg" alt="433600 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/44784"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/433598_180x180f.jpg" alt="433598 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/44784"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/433596_180x180f.jpg" alt="433596 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>1 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/42246">Barts Bash 2015</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42246"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/425508_180x180f.jpg" alt="425508 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42246"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426858_180x180f.jpg" alt="426858 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42246"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426856_180x180f.jpg" alt="426856 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42246"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426854_180x180f.jpg" alt="426854 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42246"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426850_180x180f.jpg" alt="426850 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>21 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/43092">CVDRA Event - September 2015</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/43092"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/430758_180x180f.jpg" alt="430758 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/43092"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/430756_180x180f.jpg" alt="430756 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/43092"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/430754_180x180f.jpg" alt="430754 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/43092"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/430750_180x180f.jpg" alt="430750 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/43092"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/430748_180x180f.jpg" alt="430748 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>7 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/42114">Youth Sailing at Banbury SC</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42114"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426872_180x180f.jpg" alt="426872 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42114"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426870_180x180f.jpg" alt="426870 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42114"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426868_180x180f.jpg" alt="426868 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42114"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426866_180x180f.jpg" alt="426866 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/42114"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/426864_180x180f.jpg" alt="426864 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>2 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/39861">Robin Foster Race 24th May 2015</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/39861"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/416215_180x180f.jpg" alt="416215 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/39861"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/416213_180x180f.jpg" alt="416213 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/39861"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/416211_180x180f.jpg" alt="416211 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/39861"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/416209_180x180f.jpg" alt="416209 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/39861"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/416207_180x180f.jpg" alt="416207 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>5 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/38686">Merlin Rocket Open Meeting 2015 </a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38686"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/411330_180x180f.jpg" alt="411330 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38686"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/411326_180x180f.jpg" alt="411326 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38686"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/411322_180x180f.jpg" alt="411322 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38686"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/411318_180x180f.jpg" alt="411318 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38686"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/411306_180x180f.jpg" alt="411306 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>5 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/38334">Solo Open 29th March</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38334"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/410786_180x180f.jpg" alt="410786 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38334"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/410778_180x180f.jpg" alt="410778 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38334"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/410774_180x180f.jpg" alt="410774 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38334"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/410770_180x180f.jpg" alt="410770 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/38334"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/410766_180x180f.jpg" alt="410766 180x180f" /></a>
+<span style='color:#aaa;position:absolute;top:-1.5em;right:0;'>19 more</span>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/18333">Juniors</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/18333"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/353909_180x180f.jpg" alt="353909 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/18333"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/353905_180x180f.jpg" alt="353905 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/18333"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/353901_180x180f.jpg" alt="353901 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/18333"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/353897_180x180f.jpg" alt="353897 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/18333"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/347769_180x180f.jpg" alt="347769 180x180f" /></a>
+</span>
+</div>
+</li>
+<li>
+<h2><a href="http://www.banburysailing.org.uk:443/gallery/110191">eSailing images</a></h2>
+<div style='margin:0 -10px;'>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/110191"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/743237_180x180f.jpg" alt="743237 180x180f" /></a>
+</span>
+<span class='image'>
+<a href="http://www.banburysailing.org.uk:443/gallery/110191"><img src="https://boxstuff-development-thumbnails.s3.amazonaws.com/743225_180x180f.jpg" alt="743225 180x180f" /></a>
+</span>
+</div>
+</li>
+</ul>
+
+<style>
+  #base-paging { text-align:left; }
+  #base-paging a:first-child, #base-paging span:first-child { }
+  #base-paging a:last-child, #base-paging span:last-child { float:right; }
+</style>
+<div id='base-paging'>
+</div>
+</div>
+<div style='clear:both;'></div>
+</div>
+</div>
+
+<div id='footer-logos'>
+<div class='inner'>
+<div class='row'>
+<a target="_blank" href="http://rya.org.uk/"><img src="images/site/RYA-logo-group-100px.png" alt="RYA-logo-group-100px" /></a>
+<img src="images/site/BSC-funders-100px.png" alt="BSC-funders-100px" />
+</div>
+</div>
+</div>
+
+<div id='footer'>
+<div class='inner'>
+<table>
+<tr>
+<td class='cols4'>
+<h2>Site</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="index.html">Home</a>
+</li>
+<li class=' depth0    ' data-index='2'>
+<a href="page/history.html">Club</a>
+</li>
+<li class=' depth0    ' data-index='2'>
+<a href="page/overview.html">Sailing</a>
+</li>
+<li class=' depth0    '>
+<a href="news.html">News</a>
+</li>
+<li class=' depth0    '>
+<a href="http://www.banburysailing.org.uk:443/events">Calendar</a>
+</li>
+<li class=' depth0 on   '>
+<a href="galleries.html">Galleries</a>
+</li>
+<li class=' depth0    '>
+<a href="links.html">Links</a>
+</li>
+<li class=' depth0    '>
+<a href="results.html">Results</a>
+</li>
+<li class=' depth0    '>
+<a href="http://www.banburysailing.org.uk:443/booking">Book online</a>
+</li>
+<li class=' depth0    '>
+<a href="http://www.banburysailing.org.uk:443/contact">Contacts</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Club</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="club/history.html">About Banbury Sailing Club</a>
+</li>
+<li class=' depth0    '>
+<a href="club/benefits-of-membership.html">Benefits of Membership</a>
+</li>
+<li class=' depth0    '>
+<a href="club/club-boats.html">Club Boats</a>
+</li>
+<li class=' depth0    '>
+<a href="club/join-us.html">Join Us!</a>
+</li>
+<li class=' depth0    '>
+<a href="club/social-events.html">Social Events</a>
+</li>
+<li class=' depth0    '>
+<a href="club/committee.html">The General Committee</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Sailing</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="sailing/overview.html">Sailing Overview</a>
+</li>
+<li class=' depth0    '>
+<a href="sailing/e-sailing-at-banbury-sc.html">eSailing at Banbury SC</a>
+</li>
+<li class=' depth0    '>
+<a href="sailing/overview-1.html">Training Overview</a>
+</li>
+<li class=' depth0    '>
+<a href="sailing/cruising-at-banbury-sc.html">Cruising At Banbury SC</a>
+</li>
+<li class=' depth0    '>
+<a href="sailing/racing-at-bsc-1.html">Racing at BSC</a>
+</li>
+<li class=' depth0    '>
+<a href="sailing/sunday-duties-roles-responsibilities-and-volunteering.html">SUNDAY DUTIES - Roles, Responsibilities and Volunteering</a>
+</li>
+<li class=' depth0    '>
+<a href="sailing/our-youth-section.html">Our Youth Section</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Contact details</h2>
+<p>Boddington Reservoir<br />Byfield<br />Northants<br />NN11 6XU</p>
+<p>
+Phone : 01327 260960
+<br>
+Email : <a href="mailto:info@banburysailing.org.uk">info@banburysailing.org.uk</a>
+</p>
+<p><a href="http://www.banburysailing.org.uk:443/contact#map">View on map</a></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id='base'>
+<div class='inner'>
+<span id='base-credit'>&copy; 2020 Banbury Sailing Club</span>
+<span id='base-right'>powered by <a target="_blank" href="http://www.sailingclubmanager.com/">Sailing Club Manager</a></span>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-8170523-13', 'www.banburysailing.org.uk');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from banburysailing.org.uk/galleries by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 10 Jun 2020 14:54:47 GMT -->
+</html>

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from banburysailing.org.uk/sailing/esailing-programme by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 10 Jun 2020 14:56:54 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+<script src='../cms-packages/jquery/1.8.3/jquery-min.js' type='text/javascript'></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="../compiled-assets/autocomplete-rails-5d8d93a5f6e19ab6e682b9dd9999592b61ff3c3d69ea242a830a8556158001fa.js"></script>
+<script src="../javascripts/frontend/site.js"></script>
+<link rel="stylesheet" media="screen" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css" />
+<script src='../cms-packages/jquery-match-height/0.6.0/jquery-match-height.js' type='text/javascript'></script>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="ciMh8abtaZoRpi9Z825mU8Ji6iqdQrx5B8ugaISWRLO0Az5hO3+TB1ueA9s7TtjXK2Oam/bfstPjKZNClaM79Q==" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i' rel='stylesheet'>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href='../generated-stylesheets/565-070620200007.css' rel='stylesheet'>
+<link href='../generated-stylesheets/override.css' rel='stylesheet'>
+<link rel='shortcut icon' type='image/x-icon' href='../favicon.ico' />
+<meta content='width=device-width,initial-scale=1.0' name='viewport'>
+
+
+<title>Banbury Sailing Club : eSailing Programme &amp; Results</title>
+</head>
+<body class='action-page page-content-esailing-programme'>
+<div id='topper'>
+<div class='inner'>
+<form action="https://banburysailing.org.uk/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+<span id='top-social'>
+<a target="_blank" href="https://www.facebook.com/BanburySailingClub"><img width="18" height="18" src="../images/site/top-facebook2x.png" alt="Top facebook2x" /></a>
+
+
+
+
+
+
+
+</span>
+<span id='top-phone'>
+<span class='not-mobile'><img width="18" height="18" src="../images/site/top-phone2x.png" alt="Top phone2x" /></span>
+<span class='not-mobile'>01327 260960</span>
+</span>
+<span id='top-email'>
+<a href='mailto:info@banburysailing.org.uk'><img width="24" height="18" src="../images/site/top-email2x.png" alt="Top email2x" /></a>
+<span class='not-mobile'><a href="mailto:info@banburysailing.org.uk">Email us</a></span>
+</span>
+<span id='top-search'>
+<a href='#' onclick='toggle_search()'><img width="12" height="18" src="../images/site/top-search2x.png" alt="Top search2x" /></a>
+<input type="text" name="q" id="q" placeholder="search..." style="display:none" />
+</span>
+<span id='top-right'>
+<a href="http://www.banburysailing.org.uk:443/my-cart">Basket</a>
+<a href="http://www.banburysailing.org.uk:443/login">Login</a>
+
+</span>
+</form>
+
+</div>
+</div>
+<div id='header'>
+<div class='inner'>
+<a href="../index.html"><img id="primary-logo" src="../images/site/BSC-full-logo-left-2020-110px2.png" alt="BSC full logo" /></a>
+<img id="secondary-logo" src="../images/site/BSC-70-years-110px.png" alt="70yr logo" />
+
+</div>
+</div>
+<div id='grouping'>
+<div id='navigation'>
+<div class='inner'><ul class='menu with-burger'>
+<li class='burger'><a href="#" onclick="toggle_burger(); return false;">&#9776; Menu</a></li>
+<li class='non-burger depth0    '>
+<a href="../index.html">Home</a>
+</li>
+<li class='non-burger depth0    ' data-index='0'>
+<a href="../page/history.html">Club</a>
+</li>
+<li class='non-burger depth0 on   ' data-index='1'>
+<a href="../page/overview.html">Sailing</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="../news.html">News</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="../events.htmls">Calendar</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="../galleries.html">Galleries</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="../links.html">Links</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="../results.html">Results</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="http://www.banburysailing.org.uk:443/booking">Book online</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="http://www.banburysailing.org.uk:443/forums">Forums</a>
+</li>
+<li class='non-burger depth0    '>
+<a href="../contact">Contacts</a>
+</li>
+</ul>
+</div>
+</div>
+<script>
+  function toggle_burger() {
+  	$('.non-burger').toggleClass( 'show' );
+  }
+</script>
+<style>
+  .count {
+  	float:right;
+  	display:inline-block;
+  	background:#888;
+  	color:white;
+  	font-size:10px;
+  	padding:0 3px;
+  	border-radius:2px;
+  	position:relative;
+  	top:2px;
+  }
+</style>
+</div>
+<script>
+  $(function(){
+  	var preHeight = $('.trail.pre').outerHeight( true );
+  	var postHeight = $('.trail.pre').outerHeight( true );
+  	var maxHeight = 0
+  	if (preHeight && preHeight > maxHeight)
+  		maxHeight = preHeight;
+  	if (postHeight && postHeight > maxHeight)
+  		maxHeight = postHeight;
+  	if (maxHeight>0) {
+  		$('#secondary').css('margin-top',maxHeight+'px');
+  	}
+  })
+</script>
+<div class='with-secondary  with-trail' id='page'>
+<div class='inner'>
+
+<div class='trail pre'><a href="../index.html">Home</a> <span class="sep">/</span> <a href="overview.html">Sailing</a> <span class="sep">/</span> <a href="e-sailing-at-banbury-sc.html">eSailing at Banbury SC</a> <span class="sep">/</span> eSailing Programme & Results</div>
+<div class='not-popup' id='secondary' style=''>
+<a class="changer" href="#" onclick="toggle_secondary_menu(); return false;">&#9776; More</a>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="overview.html">Sailing Overview</a>
+</li>
+<li class=' depth0    '>
+<span class='count'>6</span>
+<a href="e-sailing-at-banbury-sc.html">eSailing at Banbury SC...</a>
+</li>
+<li class=' depth1    '>
+<a href="../e-sailing-at-banbury-sc/esailing-getting-started.html">eSailing Getting Started</a>
+</li>
+<li class=' depth1    '>
+<a href="../e-sailing-at-banbury-sc/esailing-documents.html">eSailing Documents</a>
+</li>
+<li class=' depth1    '>
+<a href="../e-sailing-at-banbury-sc/esailing-videos.html">eSailing Videos</a>
+</li>
+<li class=' depth1 on   '>
+<span class='count'>2</span>
+<a href="../e-sailing-at-banbury-sc/esailing-programme.html">eSailing Programme &amp; Results...</a>
+</li>
+<li class=' depth2    '>
+<a href="../esailing-programme/2020-summer-results.html">2020 Summer Results</a>
+</li>
+<li class=' depth2    '>
+<a href="../esailing-programme/2020-spring-results.html">2020 Spring Results</a>
+</li>
+<li class=' depth0    '>
+<span class='count'>8</span>
+<a href="overview-1.html">Training Overview...</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/training-brochure.html">Training Brochure 2020</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/start-sailing-rya-level-1.html">Start Sailing - RYA Level 1</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/intermediate-sailing-rya-level-2.html">Intermediate Sailing - RYA Level 2</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/better-sailing-rya-level-3.html">Better Sailing - RYA Level 3</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/rya-power-boat-level-1.html">RYA Power Boat Level 1</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/rya-power-boat-level-2.html">RYA Power Boat Level 2</a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/rya-racing-coach-.html">RYA Racing Coach </a>
+</li>
+<li class=' depth1    '>
+<a href="../overview-1/bsc-training-terms-and-conditions-1.html">BSC Training - Terms and Conditions</a>
+</li>
+<li class=' depth0    '>
+<span class='count'>1</span>
+<a href="cruising-at-banbury-sc.html">Cruising At Banbury SC...</a>
+</li>
+<li class=' depth1    '>
+<a href="../cruising-at-banbury-sc/offshore-weekend-25th-to-27th-september.html">Offshore Weekend 25th to 27th September</a>
+</li>
+<li class=' depth0    '>
+<span class='count'>27</span>
+<a href="racing-at-bsc-1.html">Racing at BSC...</a>
+</li>
+<li class=' depth1    '>
+<a href="../racing-at-bsc-1/main-racing-series-overview-1.html">Main Racing Series overview</a>
+</li>
+<li class=' depth1    '>
+<a href="../racing-at-bsc-1/special-races-and-series-1.html">Special Races and Series</a>
+</li>
+<li class=' depth1    '>
+<a href="../racing-at-bsc-1/boats-sailed.html">Racing</a>
+</li>
+<li class=' depth1    '>
+<a href="../racing-at-bsc-1/the-bill-mansfield-memorial-trophy-sailied-in-aid-of-sailability-1.html">The Bill Mansfield Memorial Trophy sailied in aid of Sailability</a>
+</li>
+<li class=' depth0    '>
+<a href="sunday-duties-roles-responsibilities-and-volunteering.html">SUNDAY DUTIES - Roles, Responsibilities and Volunteering</a>
+</li>
+<li class=' depth0    '>
+<span class='count'>5</span>
+<a href="our-youth-section.html">Our Youth Section...</a>
+</li>
+<li class=' depth1    '>
+<a href="../our-youth-section/youth-training-consent-form-2019-1.html">Youth Training Consent Form 2019</a>
+</li>
+<li class=' depth1    '>
+<a href="../our-youth-section/youth-team-page-2.html">Youth Activities</a>
+</li>
+</ul>
+
+
+</div>
+<div id='primary'>
+<style>
+  #problems a { color:white; font-weight:bold; }
+</style>
+
+<div class='trail post'><a href="../index.html">Home</a> <span class="sep">/</span> <a href="overview.html">Sailing</a> <span class="sep">/</span> <a href="e-sailing-at-banbury-sc.html">eSailing at Banbury SC</a> <span class="sep">/</span> eSailing Programme & Results</div>
+<style>
+  #page-article img { max-width:100%; }
+</style>
+<div class='content content-slug-esailing-programme' id='page-article'>
+<h1 class='page-article'>eSailing Programme & Results</h1>
+<img style="max-width:100%;display:block;" src="https://boxstuff-development-thumbnails.s3.amazonaws.com/756035_orig.jpg" alt="756035 orig" />
+<h2></h2>
+<h5>For the duration of the Summer Series, we will also be running informal practice races on Wednesdays at 9pm, subject to demand.</h5>
+<h2></h2>
+<h2><span style="color: rgb(15, 36, 62);">Series Results</span></h2>
+<ul>
+<li><a href="../esailing-programme/2020-summer-results.html">2020 Summer Results</a></li>
+<li><a href="../esailing-programme/2020-spring-results.html">2020 Spring Results</a></li></ul>
+<p><br></p>
+<p style='color:#aaa;font-size:12px;'>Last updated 11:32 on 5 June 2020</p>
+</div>
+
+
+<style>
+  #base-paging { text-align:left; }
+  #base-paging a:first-child, #base-paging span:first-child { }
+  #base-paging a:last-child, #base-paging span:last-child { float:right; }
+</style>
+<div id='base-paging'>
+</div>
+</div>
+<div style='clear:both;'></div>
+</div>
+</div>
+
+<div id='footer-logos'>
+<div class='inner'>
+<div class='row'>
+<a target="_blank" href="http://rya.org.uk/"><img src="../images/site/RYA-logo-group-100px.png" alt="RYA-logo-group-100px" /></a>
+<img src="../images/site/BSC-funders-100px.png" alt="BSC-funders-100px" />
+</div>
+</div>
+</div>
+
+<div id='footer'>
+<div class='inner'>
+<table>
+<tr>
+<td class='cols4'>
+<h2>Site</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="../index.html">Home</a>
+</li>
+<li class=' depth0    ' data-index='2'>
+<a href="../page/history.html">Club</a>
+</li>
+<li class=' depth0 on   ' data-index='2'>
+<a href="../page/overview.html">Sailing</a>
+</li>
+<li class=' depth0    '>
+<a href="../news.html">News</a>
+</li>
+<li class=' depth0    '>
+<a href="http://www.banburysailing.org.uk:443/events">Calendar</a>
+</li>
+<li class=' depth0    '>
+<a href="../galleries.html">Galleries</a>
+</li>
+<li class=' depth0    '>
+<a href="../links.html">Links</a>
+</li>
+<li class=' depth0    '>
+<a href="../results.html">Results</a>
+</li>
+<li class=' depth0    '>
+<a href="http://www.banburysailing.org.uk:443/booking">Book online</a>
+</li>
+<li class=' depth0    '>
+<a href="http://www.banburysailing.org.uk:443/contact">Contacts</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Club</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="../club/history.html">About Banbury Sailing Club</a>
+</li>
+<li class=' depth0    '>
+<a href="../club/benefits-of-membership.html">Benefits of Membership</a>
+</li>
+<li class=' depth0    '>
+<a href="../club/club-boats.html">Club Boats</a>
+</li>
+<li class=' depth0    '>
+<a href="../club/join-us.html">Join Us!</a>
+</li>
+<li class=' depth0    '>
+<a href="../club/social-events.html">Social Events</a>
+</li>
+<li class=' depth0    '>
+<a href="../club/committee.html">The General Committee</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Sailing</h2>
+<ul class='menu'>
+<li class=' depth0    '>
+<a href="overview.html">Sailing Overview</a>
+</li>
+<li class=' depth0    '>
+<a href="e-sailing-at-banbury-sc.html">eSailing at Banbury SC</a>
+</li>
+<li class=' depth0    '>
+<a href="overview-1.html">Training Overview</a>
+</li>
+<li class=' depth0    '>
+<a href="cruising-at-banbury-sc.html">Cruising At Banbury SC</a>
+</li>
+<li class=' depth0    '>
+<a href="racing-at-bsc-1.html">Racing at BSC</a>
+</li>
+<li class=' depth0    '>
+<a href="sunday-duties-roles-responsibilities-and-volunteering.html">SUNDAY DUTIES - Roles, Responsibilities and Volunteering</a>
+</li>
+<li class=' depth0    '>
+<a href="our-youth-section.html">Our Youth Section</a>
+</li>
+</ul>
+
+</td>
+<td class='cols4'>
+<h2>Contact details</h2>
+<p>Boddington Reservoir<br />Byfield<br />Northants<br />NN11 6XU</p>
+<p>
+Phone : 01327 260960
+<br>
+Email : <a href="mailto:info@banburysailing.org.uk">info@banburysailing.org.uk</a>
+</p>
+<p><a href="http://www.banburysailing.org.uk:443/contact#map">View on map</a></p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id='base'>
+<div class='inner'>
+<span id='base-credit'>&copy; 2020 Banbury Sailing Club</span>
+<span id='base-right'>powered by <a target="_blank" href="http://www.sailingclubmanager.com/">Sailing Club Manager</a></span>
+</div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-8170523-13', 'www.banburysailing.org.uk');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+</body>
+
+<!-- Mirrored from banburysailing.org.uk/sailing/esailing-programme by HTTrack Website Copier/3.x [XR&CO'2013], Wed, 10 Jun 2020 14:56:54 GMT -->
+</html>
